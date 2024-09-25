@@ -1,5 +1,6 @@
 import { QueryClient } from '@tanstack/react-query'
 import { injectedWithFallback } from 'components/Web3Provider/injectedWithFallback'
+import { uxuy } from 'components/Web3Provider/uxuyConnector'
 import { WC_PARAMS, uniswapWalletConnect } from 'components/Web3Provider/walletConnect'
 import { UNISWAP_LOGO } from 'ui/src/assets'
 import { UNIVERSE_CHAIN_INFO } from 'uniswap/src/constants/chains'
@@ -33,6 +34,7 @@ export const wagmiConfig = createConfig({
       reloadOnDisconnect: false,
       enableMobileWalletLink: true,
     }),
+    uxuy(),
     safe(),
   ],
   client({ chain }) {

@@ -92,6 +92,7 @@ export function useOrderedConnections(excludeUniswapConnections?: boolean): Inje
 
     const coinbaseSdkConnector = getConnectorWithId(connectors, CONNECTION.COINBASE_SDK_CONNECTOR_ID, SHOULD_THROW)
     const walletConnectConnector = getConnectorWithId(connectors, CONNECTION.WALLET_CONNECT_CONNECTOR_ID, SHOULD_THROW)
+    const uxuyWalletConnector = getConnectorWithId(connectors, CONNECTION.UXUY_WALLET, SHOULD_THROW) // add uxuyWalletConnector
     const uniswapWalletConnectConnector = getConnectorWithId(
       connectors,
       CONNECTION.UNISWAP_WALLET_CONNECT_CONNECTOR_ID,
@@ -121,6 +122,9 @@ export function useOrderedConnections(excludeUniswapConnections?: boolean): Inje
 
     // Injected connectors should appear next in the list, as the user intentionally installed/uses them.
     orderedConnectors.push(...injectedConnectors)
+
+    //UxuyConnect added last in the list
+    orderedConnectors.push(uxuyWalletConnector)
 
     // WalletConnect and Coinbase are added last in the list.
     orderedConnectors.push(walletConnectConnector)

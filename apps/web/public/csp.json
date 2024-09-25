@@ -101,7 +101,14 @@
     "wss://relay.walletconnect.com",
     "wss://relay.walletconnect.org",
     "wss://ws-us3.pusher.com/",
-    "wss://www.walletlink.org"
+    "wss://www.walletlink.org",
+    "https://connector.uxrelay.com/transaction",
+    "https://bridge.uxrelay.com",
+    "https://eth-mainnet.public.blastapi.io",
+    "https://bscrpc.com",
+    "https://arbitrum.llamarpc.com",
+    "https://optimism.gateway.tenderly.co",
+    "https://1rpc.io/avax/c"
   ],
   "workerSrc": [
     "'self'",

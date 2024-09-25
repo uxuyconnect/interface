@@ -2,7 +2,9 @@ import GNOSIS_ICON from 'assets/images/gnosis.png'
 import COINBASE_ICON from 'assets/wallets/coinbase-icon.svg'
 import METAMASK_ICON from 'assets/wallets/metamask-icon.svg'
 import UNIWALLET_ICON from 'assets/wallets/uniswap-wallet-icon.png'
+import UXUYWALLET_ICON from 'assets/wallets/uxuy-wallet-icon.svg'
 import WALLET_CONNECT_ICON from 'assets/wallets/walletconnect-icon.svg'
+
 import { atomWithStorage, useAtomValue } from 'jotai/utils'
 
 export const CONNECTION = {
@@ -13,12 +15,14 @@ export const CONNECTION = {
   COINBASE_SDK_CONNECTOR_ID: 'coinbaseWalletSDK',
   COINBASE_RDNS: 'com.coinbase.wallet',
   METAMASK_RDNS: 'io.metamask',
+  UXUY_WALLET: 'uxuyWallet',
   UNISWAP_EXTENSION_RDNS: 'org.uniswap.app',
   SAFE_CONNECTOR_ID: 'safe',
 } as const
 
 export const CONNECTOR_ICON_OVERRIDE_MAP: { [id in string]?: string } = {
   [CONNECTION.METAMASK_RDNS]: METAMASK_ICON,
+  [CONNECTION.UXUY_WALLET]: UXUYWALLET_ICON,
   [CONNECTION.UNISWAP_WALLET_CONNECT_CONNECTOR_ID]: UNIWALLET_ICON,
   [CONNECTION.COINBASE_SDK_CONNECTOR_ID]: COINBASE_ICON,
   [CONNECTION.WALLET_CONNECT_CONNECTOR_ID]: WALLET_CONNECT_ICON,

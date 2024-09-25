@@ -15973,6 +15973,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@uxuycom/web3-tg-sdk@npm:0.0.5":
+  version: 0.0.5
+  resolution: "@uxuycom/web3-tg-sdk@npm:0.0.5"
+  dependencies:
+    axios: ^1.5.0
+    buffer: ^6.0.3
+    eventemitter3: ^5.0.1
+  checksum: a781b0647ebd3b9255bb9fb3943a1974cbbc620cff86bce30ea7b16eb4abb270a615b17af682b9d7cc7fb7b36f6f842d6d5d32d8d043bbcfc381e8912a2fa93a
+  languageName: node
+  linkType: hard
+
 "@vanilla-extract/babel-plugin-debug-ids@npm:^1.0.2":
   version: 1.0.3
   resolution: "@vanilla-extract/babel-plugin-debug-ids@npm:1.0.3"
@@ -18306,6 +18317,17 @@ __metadata:
     follow-redirects: ^1.14.9
     form-data: ^4.0.0
   checksum: 38cb7540465fe8c4102850c4368053c21683af85c5fdf0ea619f9628abbcb59415d1e22ebc8a6390d2bbc9b58a9806c874f139767389c862ec9b772235f06854
+  languageName: node
+  linkType: hard
+
+"axios@npm:^1.5.0":
+  version: 1.7.7
+  resolution: "axios@npm:1.7.7"
+  dependencies:
+    follow-redirects: ^1.15.6
+    form-data: ^4.0.0
+    proxy-from-env: ^1.1.0
+  checksum: 882d4fe0ec694a07c7f5c1f68205eb6dc5a62aecdb632cc7a4a3d0985188ce3030e0b277e1a8260ac3f194d314ae342117660a151fabffdc5081ca0b5a8b47fe
   languageName: node
   linkType: hard
 
@@ -45186,6 +45208,7 @@ __metadata:
     "@crowdin/cli": 3.14.0
     "@ethersproject/keccak256": 5.7.0
     "@manypkg/cli": ^0.19.2
+    "@uxuycom/web3-tg-sdk": 0.0.5
     danger: 11.2.6
     depcheck: 1.4.7
     dotenv-cli: ^7.0.0
